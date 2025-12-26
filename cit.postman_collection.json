@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "de5a2254-ede1-434a-8902-1be4bf5e8363",
+		"name": "cit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51070137",
+		"_collection_link": "https://mdalifkhan2404-4323973.postman.co/workspace/MD.-Alif-Khan's-Workspace~45645a6a-88be-4c88-8ec3-3d7a3f534583/collection/51070137-de5a2254-ede1-434a-8902-1be4bf5e8363?action=share&source=collection_link&creator=51070137"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"xelor59600@fftube.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\":\"user\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/v1/auth/signup",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"xelor59600@fftube.com\",\r\n  \"password\": \"12345678\",\r\n  \"role\":\"user\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseURL}}/api/v1/auth/signup",
+									"host": [
+										"{{baseURL}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"signup"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InhlbG9yNTk2MDBAZmZ0dWJlLmNvbSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzY2NzczOTU5LCJleHAiOjE3NjY3NzQwNTl9.LibEvfu_n8WLhMJjo9rbkmfzJ-Y1kMgpUUQL4ndwiTk; Max-Age=100; Path=/; Expires=Fri, 26 Dec 2025 18:34:23 GMT; HttpOnly; SameSite=Strict"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "366"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"16e-xTPNFHnTkBODnLQn3ZsBkpXK7ZM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 26 Dec 2025 18:32:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"User Created successfully. Please check your email for verification code.\",\n    \"data\": {\n        \"result\": {\n            \"name\": \"John Doe\",\n            \"email\": \"xelor59600@fftube.com\",\n            \"password\": \"$2b$10$KzSoodJvhHSr8ttBVyCgqeAyWBVE6guf7.qxfOVfM.lDTRb/mF2Ra\",\n            \"role\": \"user\",\n            \"isDeleted\": false,\n            \"isVerified\": false,\n            \"verificationCode\": \"838367\",\n            \"_id\": \"694ed4c7935aab57188afd68\",\n            \"__v\": 0\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
